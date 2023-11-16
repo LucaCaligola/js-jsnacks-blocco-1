@@ -2,17 +2,30 @@
 
 const number = prompt("Enter a 7 digits number");
 
-console.log(number);
+console.log(number[0]);
 
-const digits = number.toString().split('');
+// const primoNumero = number.charAt(0);
+// const secondoNumero = number.charAt(1);
+// const terzoNumero = number.charAt(2);
+// const quartoNumero = number.charAt(3);
+// const quintoNumero = number.charAt(4);
+// const sestoNumero = number.charAt(5);
+// const settimoNumero = number.charAt(6);
 
-console.log(typeof digits);
 
 let somma = 0;
 
+// let somma = (primoNumero + secondoNumero + terzoNumero + quartoNumero + quintoNumero + sestoNumero + settimoNumero);
 
-for (let i = 1; i < digits.length; i++) {
-    somma += number[i];
+// console.log(somma)
+
+
+for (let i = 0; i < 7; i++) {
+
+    somma += parseInt(number[i]);
+    
+
+    console.log(number.charAt(i))
 }
 
-console.log(somma)
+    console.log(somma)
